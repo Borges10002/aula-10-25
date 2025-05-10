@@ -3,11 +3,310 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Class</title>
+    <meta
+      name="description"
+      content="Buy or sell delivery and distribution routes with RouteMaster. Explore opportunities, connect with our team, and start your business today."
+    />
+    <meta
+      name="keywords"
+      content="routes for sale, delivery routes, distribution routes, buy routes, sell routes, business opportunities"
+    />
+    <meta name="author" content="RouteMaster" />
+    <title>RouteMaster - Buy & Sell Delivery Routes</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1449960238630-7e720e630019?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .card {
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .route-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .contact-section {
+        background-color: #e9ecef;
+        padding: 60px 0;
+      }
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+      }
+      footer a {
+        color: #adb5bd;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: white;
+      }
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to my website</h1>
-    <h1>Welcome to my website</h1>
-    <p>This is a simple HTML document.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">RouteMaster</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#routes">Routes for Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Buy or Sell Your Delivery Routes</h1>
+        <p>
+          Discover opportunities to own your own business or sell your existing
+          routes with RouteMaster. Start your journey to financial independence
+          today!
+        </p>
+        <a href="#routes" class="btn btn-primary btn-lg mt-3">Explore Routes</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About RouteMaster</h2>
+        <p class="text-center lead">
+          RouteMaster connects independent distributors and enterprise brands
+          with opportunities to buy or sell delivery and distribution routes.
+          Whether you're looking to start your own business or exit an existing
+          one, we provide expert guidance and a trusted network to make it
+          happen.
+        </p>
+        <div class="row mt-4">
+          <div class="col-md-4 text-center">
+            <h4>Buy a Route</h4>
+            <p>
+              Find profitable delivery routes across various industries and
+              become your own boss.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h4>Sell a Route</h4>
+            <p>
+              Leverage our network to find buyers for your existing routes
+              quickly and efficiently.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h4>Expert Support</h4>
+            <p>
+              Get personalized advice from our team to ensure a smooth
+              transaction process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Routes for Sale Section -->
+    <section id="routes" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Routes for Sale</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card route-card">
+              <img
+                src="https://images.unsplash.com/photo-1525517450344-d08c0a73ae9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                class="card-img-top"
+                alt="Delivery Route"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Package Delivery Route</h5>
+                <p class="card-text">
+                  Location: Atlanta, GA<br />Revenue: $120,000/year<br />Price:
+                  $150,000
+                </p>
+                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card route-card">
+              <img
+                src="https://images.unsplash.com/photo-1595861021888-e8192a7f774e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                class="card-img-top"
+                alt="Distribution Route"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Snack Distribution Route</h5>
+                <p class="card-text">
+                  Location: Chicago, IL<br />Revenue: $90,000/year<br />Price:
+                  $110,000
+                </p>
+                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card route-card">
+              <img
+                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                class="card-img-top"
+                alt="Bread Delivery Route"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bread Delivery Route</h5>
+                <p class="card-text">
+                  Location: Miami, FL<br />Revenue: $100,000/year<br />Price:
+                  $130,000
+                </p>
+                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <p class="text-center lead mb-4">
+          Have questions or ready to buy/sell a route? Fill out the form below,
+          and our team will get back to you!
+        </p>
+        <form id="contactForm">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p>&copy; 2025 RouteMaster. All rights reserved.</p>
+        <p>
+          <a href="#privacy">Privacy Policy</a> |
+          <a href="#terms">Terms of Service</a> |
+          <a href="#contact">Contact Us</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS and Custom JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Form submission (basic client-side validation and alert)
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+
+          if (name && email && message) {
+            alert(
+              "Thank you for your message! Our team will get back to you soon."
+            );
+            this.reset();
+          } else {
+            alert("Please fill out all fields.");
+          }
+        });
+    </script>
   </body>
 </html>
